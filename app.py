@@ -134,11 +134,11 @@ def image(data_image):
     # emit the frame back
     emit('response_back', stringData)
 
-@socketio.on('connect', namespace='/test')
+@socketio.on('connect')
 def test_connect():
     app.logger.info("client connected")
    
 
     
 if __name__ == '__main__':
-    app.run()
+    socketio.run(app,port=80,)
