@@ -12,5 +12,10 @@
 3. Clone the repository or download it as a zip file. When you extract your downloaded zip files, you will get a folder flask-server-main. Open your command prompt in this directory. For example, you download it on desktop. Then your command prompt should be pointing at someRootPath\Desktop\flask-server-main>
 4. Write this in the terminal to install virtual envrionment.</br> 
 ```bash
-pip install foobar
+pip install virtualenv
 ```
+5. To activate virtualenv for this project, write the following command. Here, venv represents the folder for the virtual environment. 
+```bash
+virtualenv venv
+```
+6. 
