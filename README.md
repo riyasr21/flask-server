@@ -14,8 +14,21 @@
 ```bash
 pip install virtualenv
 ```
-5. To activate virtualenv for this project, write the following command. Here, venv represents the folder for the virtual environment. 
+5. To create virtualenv for this project, write the following command. Here, venv represents the folder for the virtual environment. 
 ```bash
 virtualenv venv
 ```
-6. 
+6. To activate this virtualenv, write the following command (On Windows).
+```bash
+venv\Scripts\activate
+```
+7. Now, we can install all the required libraries in this virtualenv using requirements.txt
+```bash
+pip install -r requirements.txt
+```
+
+##### It will take some time to install all the requirements as it requires libraries like dlib, pytorch
+8. After this, we just need to run the app.py file to start our flask server. For this write,
+```bash
+python app.py
+```
