@@ -27,8 +27,12 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-##### It will take some time to install all the requirements as it requires libraries like dlib, pytorch
+ ##### It will take some time to install all the requirements as it requires libraries like dlib, pytorch
 8. After this, we just need to run the app.py file to start our flask server. For this write,
 ```bash
 python app.py
 ```
+9. In the terminal, we'll get to see that Server has started and debugger key is active. 
+![image](https://user-images.githubusercontent.com/89318501/170897863-138e7817-530f-4f45-b719-47ff95997f6f.png)
+## Important
+You will now have to go to the distracto-meeter fronend folder. Then go to **src** folder, then to the **utils** folder. Open **om.js** file. In line 34, change the https://flask-server-eye.herokuapp.com/ in io.connect to http://127.0.0.1:80/ as the flask server with both facial expression as well as awareness detection is running here.  
